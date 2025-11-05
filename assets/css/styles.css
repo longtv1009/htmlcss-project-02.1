@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #1ebfc1;
+}
+
 html,
 body {
     scroll-behavior: smooth;
@@ -14,4 +18,130 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
+}
+
+/* ========= Common ========= */
+
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heading {
+    color: #0d1111;
+    font-weight: 700;
+}
+
+.heading.heading-1 {
+    font-size: 6.2rem;
+    line-height: 1.16;
+}
+
+.heading.heading-2 {
+    font-size: 4.2rem;
+    line-height: 1.33;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 186px;
+    line-height: 68px;
+    border-radius: 14px;
+    background: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    line-clamp: var(--line-clamp, 1);
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp-2 {
+    --line-clamp: 2;
+}
+
+/* ========= Header ========= */
+.header {
+    padding: 44px 0 0;
+    background: #ebebeb;
+}
+
+.header.fixed {
+    position: sticky;
+    top: -44px;
+    left: 0;
+}
+
+.header .nav {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.nav .navbar {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav .navbar a {
+    display: inline-block;
+    padding: 8px 20px;
+    text-align: center;
+    color: #2f3a3b;
+    font-size: 1.6rem;
+}
+
+.nav .navbar a::before,
+.nav .action .sign-in-btn::before {
+    display: block;
+    height: 0;
+    content: attr(title);
+    font-weight: 600;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.nav .navbar li.active a,
+.nav .navbar li:hover a,
+.nav .action .sign-in-btn:hover {
+    font-weight: 600;
+}
+
+.nav .action {
+    display: flex;
+    align-items: center;
+    gap: 0 24px;
+    margin-left: 157px;
+}
+
+.nav .action .sign-in-btn {
+    color: #494949;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.nav .sign-up-btn {
+    min-width: 108px;
+    line-height: 48px;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid var(--primary-color);
 }
