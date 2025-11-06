@@ -370,3 +370,62 @@ a {
 }
 
 /* ========= Features ========= */
+.features {
+    margin-top: 65px;
+    padding: 65px 0;
+    scroll-margin-top: 50px;
+}
+
+.features .features-info {
+    width: 50.5%;
+}
+
+.features .features-info .title {
+    margin-bottom: 18px;
+    color: #767e7e;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.features .features-info .features-desc {
+    margin-top: 18px;
+    color: #767e7e;
+    font-size: 1.8rem;
+    line-height: normal;
+}
+
+.features .features-sections {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+    width: 87.5%;
+}
+
+.features .features-sections strong {
+    margin-top: 26px;
+    display: block;
+    color: #0d1111;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.features .features-sections .item-desc {
+    margin-top: 16px;
+    color: #9da6a5;
+    font-size: 1.6rem;
+    line-height: 1.69;
+}
+.features .features-item:nth-child(1) {
+    width: 17%;
+}
+
+.features .features-item:nth-child(2) {
+    width: 21.8%;
+}
+
+.features .features-item:nth-child(3) {
+    width: 21.8%;
+}
