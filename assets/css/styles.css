@@ -478,6 +478,7 @@ a {
 .courses .courses-list .courses-item {
     position: relative;
     width: calc(33.33% - 31.33px);
+    height: 517px;
 }
 
 .courses .courses-list .courses-thumb {
@@ -490,7 +491,7 @@ a {
 
 .courses .courses-list .courses-item-info {
     position: absolute;
-    bottom: -124px;
+    bottom: 0px;
     left: 17px;
     width: 325px;
     padding: 18px 0 29px 25px;
@@ -543,4 +544,47 @@ a {
     height: 6px;
     border-radius: 50%;
     background: var(--primary-color);
+}
+
+/* ========= Stats========= */
+.stats {
+    margin-top: 135px;
+    padding: 65px 0;
+}
+
+.stats .stats-list {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    padding: 0 154px;
+}
+
+.stats .stats-list .stats-item {
+    text-align: center;
+}
+
+.stats .stats-list .stats-item:nth-child(1) {
+    width: 17.2%;
+}
+
+.stats .stats-list .stats-item:nth-child(2) {
+    width: 18.7%;
+}
+
+.stats .stats-list .stats-item:nth-child(3) {
+    width: 17.8%;
+}
+
+.stats .stats-item strong {
+    color: #0d1111;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.stats .stats-item .stats-desc {
+    margin-top: 11px;
+    color: #767e7e;
+    font-size: 1.8rem;
+    line-height: normal;
 }
