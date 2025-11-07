@@ -81,6 +81,14 @@ a {
     --line-clamp: 2;
 }
 
+.line-clamp-3 {
+    --line-clamp: 3;
+}
+
+.break-all {
+    overflow-wrap: break-word;
+}
+
 /* ========= Header ========= */
 .header {
     padding: 44px 0 0;
@@ -149,7 +157,13 @@ a {
     color: var(--primary-color);
     background: #fff;
     border-radius: 6px;
-    border: 1px solid var(--primary-color);
+    border: 1px solid #fff;
+}
+
+.nav .sign-up-btn:hover {
+    opacity: 1;
+    color: #fff;
+    background-color: var(--primary-color);
 }
 
 /* ========= Hero ========= */
@@ -500,6 +514,10 @@ a {
     box-shadow: 0 16px 90px 0 rgba(0, 0, 0, 0.05);
 }
 
+.courses .courses-list .courses-item-info a {
+    color: #0d1111;
+}
+
 .courses .courses-item .courses-item-desc {
     color: #9da6a5;
     font-size: 1.4rem;
@@ -593,6 +611,7 @@ a {
 .feedback {
     margin-top: 134px;
     padding: 65px 0;
+    scroll-margin-top: 70px;
 }
 
 .feedback .feedback-body {
@@ -717,6 +736,7 @@ a {
 .register {
     margin-top: 65px;
     background: #def6f5;
+    scroll-margin-top: 65px;
 }
 
 .register .register-body {
@@ -733,4 +753,80 @@ a {
 }
 .register .register-body .register-btn {
     background: #2ac9bf;
+}
+
+/* ========= Footer ========= */
+.footer {
+    margin-top: 65px;
+    padding: 65px 0 50px;
+}
+
+.footer .row-top {
+    display: flex;
+}
+
+.footer .row-top .column:nth-child(1) {
+    width: 23.2%;
+}
+
+.footer .row-top .column:nth-child(2) {
+    width: 20.1%;
+}
+
+.footer .row-top .column:nth-child(3) {
+    width: 22%;
+}
+
+.footer .row-top .column:nth-child(4) {
+    width: 25.1%;
+}
+
+.footer .row-top .column:nth-child(5) {
+    width: 20.1%;
+}
+
+.footer .row-top .footer-title {
+    color: #2e2e2e;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.footer .row-top .footer-list {
+    margin-top: 26px;
+}
+
+.footer .row-top .footer-item a {
+    color: #535353;
+    font-size: 1.6rem;
+}
+
+.footer .row-top .footer-item + .footer-item {
+    margin-top: 18px;
+}
+
+.footer .row-top .list-social {
+    margin-top: 18px;
+}
+
+.footer .row-top .footer-item-social {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.footer .row-top .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.footer .copyright {
+    margin-top: 80px;
+    text-align: center;
+    color: #b0b5b4;
+    font-size: 1.8rem;
 }
