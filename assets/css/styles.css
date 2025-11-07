@@ -712,3 +712,25 @@ a {
     bottom: 145px;
     left: 0;
 }
+
+/* ========= Register ========= */
+.register {
+    margin-top: 65px;
+    background: #def6f5;
+}
+
+.register .register-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 76px 154px 88px 0;
+}
+
+.register .register-body .register-desc {
+    margin-top: 18px;
+    color: #767e7e;
+    font-size: 1.8rem;
+}
+.register .register-body .register-btn {
+    background: #2ac9bf;
+}
